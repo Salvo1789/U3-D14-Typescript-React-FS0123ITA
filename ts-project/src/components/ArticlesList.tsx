@@ -29,7 +29,7 @@ const ArticleList = () => {
     <>
       <Container>
         <Row>
-          {articles &&
+          {
             articles.map((article) => (
               <Col xs={12} md={6} key={article.id} className="mb-2 text-center">
                 <Card
@@ -43,7 +43,7 @@ const ArticleList = () => {
                   />
                   <Card.Body className="bg-info">
                     <Card.Title>{article.title}</Card.Title>
-                    <Card.Text>
+                    <Card.Text className="text-light">
                       {article.summary}
                     </Card.Text>
                     <Link to={"/details/" + article.id}>
