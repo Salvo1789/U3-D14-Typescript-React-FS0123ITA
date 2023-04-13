@@ -31,7 +31,7 @@ const ArticleList = () => {
             <Container>
                 <Row>
         {articles && articles.map((article) => (
-                    <Col md={6} key={
+                    <Col xs={12 }md={6} key={
                         article.id
                     } className="mb-2 text-center">
             {/* <Card>
@@ -39,7 +39,7 @@ const ArticleList = () => {
                 <Card.Title>{article.title}</Card.Title>
                 <Card.Text>{article.published_at}</Card.Text>
             </Card> */}
-            <Card className="d-flex flex-column rounded" style={{minHeight:500}}>
+            <Card className="d-flex flex-column rounded" style={{height:500, width:500}}>
       <Card.Img variant="top" src={article.image_url} style={{height:200}} />
       <Card.Body>
         <Card.Title>{article.title}</Card.Title>
@@ -47,7 +47,7 @@ const ArticleList = () => {
           {article.summary}
         </Card.Text>
         <Link to={"/details/" + article.id} >
-        <Button variant="warning" className="mt-auto">Vedi Dettagli</Button>
+        <Button variant="info" className="mt-auto">Vedi Dettagli</Button>
         </Link>
       </Card.Body>
     </Card>
