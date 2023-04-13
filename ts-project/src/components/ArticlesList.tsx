@@ -34,16 +34,16 @@ const ArticleList = () => {
               <Col xs={12} md={6} key={article.id} className="mb-2 text-center">
                 <Card
                   className="d-flex flex-column rounded"
-                  style={{ height: 500, maxWidth: 500 }}
+                  style={{ height: 600, maxWidth: 500 }}
                 >
                   <Card.Img
                     variant="top"
                     src={article.image_url}
-                    style={{ height: 200 }}
+                    style={{ height: 250 }}
                   />
                   <Card.Body className="bg-info">
                     <Card.Title>{article.title}</Card.Title>
-                    <Card.Text >
+                    <Card.Text>
                       {article.summary}
                     </Card.Text>
                     <Link to={"/details/" + article.id}>

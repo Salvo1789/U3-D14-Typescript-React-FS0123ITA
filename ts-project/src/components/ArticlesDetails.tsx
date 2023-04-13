@@ -28,7 +28,7 @@ const ArticlesDetails = () => {
     <>
       {articles && (
         <div className="d-flex  justify-content-center p-3">
-          <div>
+            <div>
             <h3>{articles.title}</h3>
             <h5>{articles.news_site}</h5>
             <img
