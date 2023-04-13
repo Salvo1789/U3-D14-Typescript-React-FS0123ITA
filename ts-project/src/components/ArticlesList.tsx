@@ -41,7 +41,7 @@ const ArticleList = () => {
             </Card> */}
             <Card className="d-flex flex-column rounded" style={{height:500, width:500}}>
       <Card.Img variant="top" src={article.image_url} style={{height:200}} />
-      <Card.Body>
+      <Card.Body className="bg-info">
         <Card.Title>{article.title}</Card.Title>
         <Card.Text className="fst-italic">
           {article.summary}

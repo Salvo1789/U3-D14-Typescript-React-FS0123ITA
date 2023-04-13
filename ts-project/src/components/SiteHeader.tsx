@@ -1,6 +1,6 @@
 const SiteHeader = () =>{
     return (
-        <h1 className="text-center mb-4">SpaceFlight News</h1>
+        <h1 className="text-center text-light mb-4">SpaceFlight News</h1>
     )
 }
 
